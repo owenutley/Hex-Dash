@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" type="text/css" href="splash.css" />
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width, height=device-height, user-scalable=0"
+    />
+    <title>Hex Down</title>
+  </head>
+  <body class="app">
+    <div class="hex-background-glow"></div>
+
+    <div class="splash-card">
+      <div class="logo-container">
+        <canvas id="hex-canvas" width="160" height="160"></canvas>
+      </div>
+
+      <div class="content">
+        <h1 class="title">HEX DOWN</h1>
+        <p class="tagline">6-Direction Sliding Puzzle</p>
+        <div class="feature-pills">
+          <span class="pill">⬡ 6 Movement Directions</span>
+          <span class="pill">★ Par Challenges</span>
+        </div>
+      </div>
+
+      <button class="start-button" id="start-button">
+        <span>PLAY NOW</span>
+        <svg class="play-icon" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M8 5v14l11-7z"/>
+        </svg>
+      </button>
+    </div>
+
+    <footer class="footer">
+      <div class="docs-link" tabindex="0" id="docs-link">Rules & Guide</div>
+      <span class="divider">•</span>
+      <div class="docs-link" tabindex="0" id="playtest-link">r/Devvit</div>
+    </footer>
+    <script type="module" src="splash.ts" defer></script>
+  </body>
+</html>
